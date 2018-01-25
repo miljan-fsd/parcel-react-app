@@ -43,7 +43,7 @@ yarn
 # Once complete run
 yarn start
 
-# Open htpp://localhost:3000
+# Open http://localhost:3000
 ```
 
 ### Production
