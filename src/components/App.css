@@ -1,0 +1,17 @@
+.App {
+  margin: 0 auto;
+  text-align: center;
+  color: #62dafb;
+}
+
+.App-title {
+  margin: 0;
+  padding: 20px 0;
+  font-style: italic;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #62dafb;
+}
+
+.App-img {
+  padding: 10px;
+}
