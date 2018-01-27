@@ -1,59 +1,68 @@
 # Parcel React App
 
-Starter kit for creating React apps using Parcel Bundler.
+Starter kit for creating [React](https://reactjs.org/) apps using [Parcel Bundler](https://parceljs.org/).
 
 Folder structure:
 
 ```
 parcel-react-app/
-  public/
-    favicon.ico
-    index.html
-  src/
-    components/
-      App.css
-      App.js
-    images/
-      parceljs.png
-      reactjs.png
-    index.css
-    index.js
-  .babelrc
-  .gitignore
-  LICENCE
-  package.json
-  README.md
-  yarn.lock
+|-- public/
+|   |-- favicon.ico
+|   |-- index.html
+|-- src/
+|   |-- components/
+|   |   |-- App.css
+|   |   |-- App.js
+|   |-- images/
+|       |-- parceljs.png
+|       |-- reactjs.png
+|   |-- index.css
+|   |-- index.js
+|-- .babelrc
+|-- .gitignore
+|-- LICENCE
+|-- package.json
+|-- README.md
+|-- yarn.lock
 ```
 
 ## Getting started
 
-Clone the repo to your local machine:
+Clone the repo to your local machine and install dependencies:
 
 ```bash
-# Clone repo
 git clone https://github.com/miljan-fsd/parcel-react-app.git
 
-# Move to parcel-react-app
 cd parcel-react-app
 
-# Install dependencies
 yarn
-
-# Once complete run
-yarn start
-
-# Open http://localhost:3000
 ```
+
+or
+
+```bash
+npm install
+```
+
+### Development
+
+Start the development server run:
+
+```bash
+yarn start
+```
+
+Now open [htpp://localhost:3000](htpp://localhost:3000) in your browser.
 
 ### Production
 
+Build for production run:
+
 ```bash
-# Build for production
-yarn prod
+yarn build
 ```
 
-This will bundle your application in the `dist` folder.
+This will bundle your application in the `build` folder.
 
 ## SCSS
 
