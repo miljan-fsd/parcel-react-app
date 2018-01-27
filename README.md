@@ -1,6 +1,6 @@
 # Parcel React App
 
-Starter kit for creating [React](https://reactjs.org/) apps using [Parcel Bundler](https://parceljs.org/).
+Starter kit for creating [React](https://github.com/facebook/react) apps using [Parcel Bundler](https://github.com/parcel-bundler/parcel).
 
 Folder structure:
 
@@ -19,7 +19,10 @@ parcel-react-app/
 |   |-- index.css
 |   |-- index.js
 |-- .babelrc
+|-- .eslintrc.json
 |-- .gitignore
+|-- .prettierrc
+|-- .stylelintrc
 |-- LICENCE
 |-- package.json
 |-- README.md
@@ -38,12 +41,6 @@ cd parcel-react-app
 yarn
 ```
 
-or
-
-```bash
-npm install
-```
-
 ### Development
 
 Start the development server run:
@@ -52,7 +49,7 @@ Start the development server run:
 yarn start
 ```
 
-Now open [http://localhost:3000](http://localhost:3000) in your browser.
+Now, open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Production
 
@@ -66,7 +63,7 @@ This will bundle your application in the `build` folder.
 
 ## SCSS
 
-If you want use `.scss` instead of `.css`, you need to install `node-sass` module:
+If you want to use `.scss` instead of `.css`, you need to install `node-sass` module:
 
 ```bash
 yarn add node-sass
@@ -92,3 +89,31 @@ Then create `.postcssrc` file inside root folder and paste in:
   }
 }
 ```
+
+## Formatting and Linting
+
+The app uses [eslint](https://github.com/eslint/eslint) and [stylelint](https://github.com/stylelint/stylelint) for linting and [prettier](https://github.com/prettier/prettier) for formatting files.
+
+To fix formatting issues:
+
+```bash
+yarn format
+```
+### Formatting JS
+
+If you want to fix only javascript issues:
+
+```bash
+yarn format:js
+```
+
+### Formatting Styles
+
+If you want to fix only style issues:
+
+```bash
+yarn format:style
+```
+## Licence
+
+[MIT](https://tldrlegal.com/license/mit-license)

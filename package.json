@@ -4,16 +4,20 @@
   "description": "Create React apps using Parcel as build tool",
   "main": "index.js",
   "scripts": {
-    "start":
-      "cross-env NODE_ENV=development parcel ./public/index.html -p 3000",
-    "build":
-      "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url ./"
+    "start": "cross-env NODE_ENV=development parcel ./public/index.html -p 3000",
+    "build": "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url ./",
+    "format:js": "prettier --write './src/**/*.{js, jsx, json, md}'",
+    "format:style": "prettier-stylelint --write './src/**/*.{css, scss}'",
+    "format": "npm run format:js && npm run format:style"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miljan-fsd/parcel-react-app.git"
   },
-  "keywords": ["Parcel", "React"],
+  "keywords": [
+    "Parcel",
+    "React"
+  ],
   "author": "Miljan Djordjevic <miljan.fsd@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -21,13 +25,22 @@
   },
   "homepage": "https://github.com/miljan-fsd/parcel-react-app#readme",
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.3",
-    "parcel-bundler": "^1.5.0"
+    "eslint": "^4.16.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.6.0",
+    "parcel-bundler": "^1.5.0",
+    "parcel-plugin-eslint": "^1.0.3",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0"
   }
 }

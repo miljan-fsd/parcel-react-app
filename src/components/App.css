@@ -1,17 +1,50 @@
-.App {
+.app {
   margin: 0 auto;
   text-align: center;
-  color: #62dafb;
 }
 
-.App-title {
+.title {
   margin: 0;
-  padding: 20px 0;
+  padding: 80px 0;
   font-style: italic;
   font-size: 2.5rem;
-  border-bottom: 2px solid #62dafb;
+  text-transform: uppercase;
+  background-color: #62dafb;
+  color: #fff;
 }
 
-.App-img {
-  padding: 10px;
+.text {
+  font-size: 1.2rem;
+}
+
+.text span {
+  color: #62dafb;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.img {
+  margin: 10px;
+}
+
+.logo {
+  width: 120px;
+  position: relative;
+  animation: react 5s infinite;
+}
+
+@keyframes react {
+  20%,
+  100% {
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+
+  0%,
+  10% {
+    left: 0;
+    bottom: -150px;
+    opacity: 0;
+  }
 }
