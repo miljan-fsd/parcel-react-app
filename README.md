@@ -52,7 +52,7 @@ Start the development server run:
 yarn start
 ```
 
-Now open [htpp://localhost:3000](htpp://localhost:3000) in your browser.
+Now open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Production
 

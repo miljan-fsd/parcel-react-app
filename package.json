@@ -1,12 +1,13 @@
 {
   "name": "parcel-react-app",
   "version": "1.0.0",
-  "description": "A simple React app using Parcel as build tool",
+  "description": "Create React apps using Parcel as build tool",
   "main": "index.js",
   "scripts": {
     "start":
       "cross-env NODE_ENV=development parcel ./public/index.html -p 3000",
-    "prod": "cross-env NODE_ENV=production parcel build ./public/index.html"
+    "build":
+      "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url ./"
   },
   "repository": {
     "type": "git",
