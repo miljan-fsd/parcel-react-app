@@ -2,6 +2,17 @@
 
 Starter kit for creating [React](https://github.com/facebook/react) apps using [Parcel Bundler](https://github.com/parcel-bundler/parcel).
 
+## Table of Contents
+
+* [Getting Started](https://github.com/miljan-fsd/parcel-react-app#getting-started)
+  * [Development](https://github.com/miljan-fsd/parcel-react-app#development)
+  * [Production](https://github.com/miljan-fsd/parcel-react-app#production)
+* [SCSS](https://github.com/miljan-fsd/parcel-react-app#scss)
+* [CSS Modules](https://github.com/miljan-fsd/parcel-react-app#css-modules)
+* [Formatting and Linting](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting)
+  * [Formatting JS](https://github.com/miljan-fsd/parcel-react-app#formatting-js)
+  * [Formatting Styles](https://github.com/miljan-fsd/parcel-react-app#formatting-styles)
+
 Folder structure:
 
 ```
@@ -63,7 +74,7 @@ This will bundle your application in the `build` folder.
 
 ## SCSS
 
-If you want to use `.scss` instead of `.css`, you need to install `node-sass` module:
+If you want to use `.scss` instead of `.css`, you need to install [node-sass](https://github.com/sass/node-sass) module:
 
 ```bash
 yarn add node-sass
@@ -71,7 +82,7 @@ yarn add node-sass
 
 ## CSS Modules
 
-In order to use **CSS Modules** you need to install:
+In order to use [CSS Modules](https://github.com/css-modules/css-modules) you need to install [postcss-modules](https://github.com/css-modules/postcss-modules) and [autoprefixer](https://github.com/postcss/autoprefixer):
 
 ```bash
 yarn add postcss-modules autoprefixer
