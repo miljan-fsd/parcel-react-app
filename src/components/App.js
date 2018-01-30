@@ -15,18 +15,16 @@ class App extends Component {
   }
 
   render() {
-    const awesome = this.state.isAwesome ? (
-      <p className="text">
-        Let's make something <span>awesome</span> together. Edit{' '}
-        <code>src/components/App.js</code> and save to see changes.
-      </p>
-    ) : null
+    const awesome = this.state.isAwesome ? <span>awesome</span> : ''
 
     return (
       <div className="app">
         <h1 className="title">{this.props.title}</h1>
 
-        {awesome}
+        <p className="text">
+          Let's make something {awesome} together. Edit{' '}
+          <code>src/components/App.js</code> and save to see changes.
+        </p>
 
         <img src={react} className="img logo" alt="React.js" />
 

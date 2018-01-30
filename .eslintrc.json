@@ -4,7 +4,11 @@
     "es6": true
   },
   "parser": "babel-eslint",
-  "extends": ["plugin:react/recommended", "eslint:recommended"],
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:jest/recommended"
+  ],
   "parserOptions": {
     "ecmaVersion": 2017,
     "ecmaFeatures": {
@@ -13,13 +17,19 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "jest", "json", "markdown"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "no-console": "off",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "globals": {
+    "shallow": true,
+    "render": true,
+    "mount": true
   }
 }

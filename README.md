@@ -1,6 +1,6 @@
 # Parcel React App
 
-Starter kit for creating [React](https://github.com/facebook/react) apps using [Parcel Bundler](https://github.com/parcel-bundler/parcel).
+Create [React](https://github.com/facebook/react) apps using [Parcel](https://github.com/parcel-bundler/parcel) as build tool.
 
 ## Table of Contents
 
@@ -10,8 +10,10 @@ Starter kit for creating [React](https://github.com/facebook/react) apps using [
 * [SCSS](https://github.com/miljan-fsd/parcel-react-app#scss)
 * [CSS Modules](https://github.com/miljan-fsd/parcel-react-app#css-modules)
 * [Formatting and Linting](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting)
-  * [Formatting JS](https://github.com/miljan-fsd/parcel-react-app#formatting-js)
-  * [Formatting Styles](https://github.com/miljan-fsd/parcel-react-app#formatting-styles)
+  * [Formatting and Linting JS](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-js)
+  * [Formatting and Linting Styles](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-styles)
+* [Testing](https://github.com/miljan-fsd/parcel-react-app#testing)
+* [Licence](https://github.com/miljan-fsd/parcel-react-app#licence)
 
 Folder structure:
 
@@ -24,11 +26,14 @@ parcel-react-app/
 |   |-- components/
 |   |   |-- App.css
 |   |   |-- App.js
+|   |   |-- App.test.js
 |   |-- images/
 |       |-- parceljs.png
 |       |-- reactjs.png
 |   |-- index.css
 |   |-- index.js
+|-- test/
+|   |-- jestsetup.js
 |-- .babelrc
 |-- .eslintrc.json
 |-- .gitignore
@@ -103,28 +108,71 @@ Then create `.postcssrc` file inside root folder and paste in:
 
 ## Formatting and Linting
 
-The app uses [eslint](https://github.com/eslint/eslint) and [stylelint](https://github.com/stylelint/stylelint) for linting and [prettier](https://github.com/prettier/prettier) for formatting files.
+The app uses [eslint](https://github.com/eslint/eslint) and [stylelint](https://github.com/stylelint/stylelint) for linting and [prettier](https://github.com/prettier/prettier) for formatting files. Supports the following file extensions: `.js`, `.jsx`, `.json`, `.md`, `.css` and `.scss`.
 
 To fix formatting issues:
 
 ```bash
 yarn format
 ```
-### Formatting JS
 
-If you want to fix only javascript issues:
+To lint your code:
+
+```bash
+yarn lint
+```
+
+### Formatting and Linting JS
+
+If you want to fix JavaScript issues (this will also fix: `.json` and `.md` files):
 
 ```bash
 yarn format:js
 ```
 
-### Formatting Styles
+To lint JavaScript code (this will also lint: `.json` and `.md` files):
 
-If you want to fix only style issues:
+```bash
+yarn lint:js
+```
+
+### Formatting and Linting Styles
+
+If you want to fix only style issues (`.css` and `.scss` files):
 
 ```bash
 yarn format:style
 ```
+
+To lint your style (`.css` and `.scss` files):
+
+```bash
+yarn lint:style
+```
+
+## Testing
+
+The app uses [Jest](https://github.com/facebook/jest) a test runner and [Enzyme](https://github.com/airbnb/enzyme) a testing utilitis for React.
+
+To run all unit tests:
+
+```bash
+yarn test
+```
+
+Run watch mode:
+
+```bash
+yarn test:watch
+```
+
+Get coverage report run:
+
+```bash
+yarn test:coverage
+```
+
+
 ## Licence
 
-[MIT](https://tldrlegal.com/license/mit-license)
+[MIT](https://tldrlegal.com/license/mit-license) &copy; Miljan Djordjevic

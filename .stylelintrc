@@ -2,6 +2,10 @@
   "extends": [
     "stylelint-config-standard"
   ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "defaultSeverity": "warning",
   "rules": {
     "selector-pseudo-class-no-unknown": [true, {
       "ignorePseudoClasses": ["global"]
