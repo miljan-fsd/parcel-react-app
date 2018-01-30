@@ -114,8 +114,8 @@ Install [styled-components](https://github.com/styled-components/styled-componen
 yarn add styled-components
 ```
 
-If you want to lint your styled-components with stylelint follow the instructions on [stylelint-processor-styled-components](https://github.com/styled-components/stylelint-processor-styled-components). Then add
-this script to your `packages.json`:
+If you want to lint your **styled-components** with **stylelint** follow the instructions on [stylelint-processor-styled-components](https://github.com/styled-components/stylelint-processor-styled-components). Then add
+this script to your `package.json`:
 
 ```bash
 "lint:styled": "stylelint './src/**/*.js'"
