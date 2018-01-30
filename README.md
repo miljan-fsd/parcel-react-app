@@ -106,6 +106,21 @@ Then create `.postcssrc` file inside root folder and paste in:
 }
 ```
 
+## Styled-Components
+
+Install [styled-components](https://github.com/styled-components/styled-components):
+
+```bash
+yarn add styled-components
+```
+
+If you want to lint your styled-components with stylelint follow the instructions on [stylelint-processor-styled-components](https://github.com/styled-components/stylelint-processor-styled-components). Then add
+this script to your `packages.json`:
+
+```bash
+"lint:styled": "stylelint './src/**/*.js'"
+```
+
 ## Formatting and Linting
 
 The app uses [eslint](https://github.com/eslint/eslint) and [stylelint](https://github.com/stylelint/stylelint) for linting and [prettier](https://github.com/prettier/prettier) for formatting files. Supports the following file extensions: `.js`, `.jsx`, `.json`, `.md`, `.css` and `.scss`.
@@ -124,27 +139,29 @@ yarn lint
 
 ### Formatting and Linting JS
 
-If you want to fix JavaScript issues (this will also fix: `.json` and `.md` files):
+If you want to fix JavaScript issues:
 
 ```bash
 yarn format:js
 ```
 
-To lint JavaScript code (this will also lint: `.json` and `.md` files):
+To lint JavaScript code:
 
 ```bash
 yarn lint:js
 ```
 
+This will also fix or lint if you have `.json` and `.md` files inside `src/` folder.
+
 ### Formatting and Linting Styles
 
-If you want to fix only style issues (`.css` and `.scss` files):
+If you want to fix only style issues (`.css` or `.scss` files):
 
 ```bash
 yarn format:style
 ```
 
-To lint your style (`.css` and `.scss` files):
+To lint your style (`.css` or `.scss` files):
 
 ```bash
 yarn lint:style

@@ -4,13 +4,16 @@
   "description": "Create React apps using Parcel as build tool",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development parcel ./public/index.html -p 3000",
-    "build": "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url ./",
-    "format:js": "prettier --write './src/**/*.?(js|jsx|json|md)'",
-    "format:style": "prettier-stylelint --write './src/**/*.?(css|scss)'",
+    "start":
+      "cross-env NODE_ENV=development parcel ./public/index.html -p 3000",
+    "build":
+      "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url ./",
+    "format:js": "prettier --write './src/**/*.{js,jsx,json,md}'",
+    "format:style": "prettier-stylelint --write './src/**/*.{css,scss}'",
     "format": "npm run format:js && npm run format:style",
-    "lint:style": "stylelint './src/**/*.css' './src/**/*.scss' --formatter verbose; exit 0",
-    "lint:js": "eslint --ext .js,.jsx,.json,.md './src/'; exit 0",
+    "lint:style":
+      "stylelint './src/**/*.{css,scss}' --formatter verbose; exit 0",
+    "lint:js": "eslint './src/**/*.{js,jsx,json,md}'; exit 0",
     "lint": "npm run lint:style && npm run lint:js",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -20,10 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/miljan-fsd/parcel-react-app.git"
   },
-  "keywords": [
-    "Parcel",
-    "React"
-  ],
+  "keywords": ["Parcel", "React"],
   "author": "Miljan Djordjevic <miljan.fsd@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -62,17 +62,12 @@
     "stylelint-scss": "^2.2.0"
   },
   "jest": {
-    "setupFiles": [
-      "./test/jestsetup.js"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
+    "setupFiles": ["./test/jestSetup.js"],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "moduleNameMapper": {
-      "^.+\\.(css|scss|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy"
+      "^.+\\.(css|scss|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "identity-obj-proxy"
     }
   }
 }
