@@ -9,6 +9,7 @@ Create [React](https://github.com/facebook/react) apps using [Parcel](https://gi
   * [Production](https://github.com/miljan-fsd/parcel-react-app#production)
 * [SCSS](https://github.com/miljan-fsd/parcel-react-app#scss)
 * [CSS Modules](https://github.com/miljan-fsd/parcel-react-app#css-modules)
+* [Styled-Components](https://github.com/miljan-fsd/parcel-react-app#styled-components)
 * [Formatting and Linting](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting)
   * [Formatting and Linting JS](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-js)
   * [Formatting and Linting Styles](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-styles)
