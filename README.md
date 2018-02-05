@@ -40,7 +40,7 @@ parcel-react-app/
 |-- .gitignore
 |-- .prettierrc
 |-- .stylelintrc
-|-- LICENCE
+|-- LICENSE
 |-- package.json
 |-- README.md
 |-- yarn.lock
@@ -191,6 +191,6 @@ yarn test:coverage
 ```
 
 
-## Licence
+## License
 
-[MIT](https://tldrlegal.com/license/mit-license) &copy; Miljan Djordjevic
+[MIT](https://tldrlegal.com/license/mit-license) &copy; 2018 Miljan Djordjevic
