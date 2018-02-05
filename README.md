@@ -14,7 +14,7 @@ Create [React](https://github.com/facebook/react) apps using [Parcel](https://gi
   * [Formatting and Linting JS](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-js)
   * [Formatting and Linting Styles](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-styles)
 * [Testing](https://github.com/miljan-fsd/parcel-react-app#testing)
-* [Licence](https://github.com/miljan-fsd/parcel-react-app#licence)
+* [License](https://github.com/miljan-fsd/parcel-react-app#license)
 
 Folder structure:
 
