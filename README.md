@@ -5,6 +5,8 @@ Create [React](https://github.com/facebook/react) apps using [Parcel](https://gi
 ## Table of Contents
 
 * [Getting Started](https://github.com/miljan-fsd/parcel-react-app#getting-started)
+  * [Install](https://github.com/miljan-fsd/parcel-react-app#install)
+  * [Usage](https://github.com/miljan-fsd/parcel-react-app#usage)
   * [Development](https://github.com/miljan-fsd/parcel-react-app#development)
   * [Production](https://github.com/miljan-fsd/parcel-react-app#production)
 * [SCSS](https://github.com/miljan-fsd/parcel-react-app#scss)
@@ -48,14 +50,20 @@ parcel-react-app/
 
 ## Getting started
 
-Clone the repo to your local machine and install dependencies:
+### Install
+
+Install `parcel-react-app` globally:
 
 ```bash
-git clone https://github.com/miljan-fsd/parcel-react-app.git
+npm i -g parcel-react-app
+```
 
-cd parcel-react-app
+### Usage
 
-yarn
+To create a new app, run:
+
+```bash
+parcel-react-app my-app
 ```
 
 ### Development
