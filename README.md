@@ -18,10 +18,29 @@ Create [React](https://github.com/facebook/react) apps using [Parcel](https://gi
 * [Testing](https://github.com/miljan-fsd/parcel-react-app#testing)
 * [License](https://github.com/miljan-fsd/parcel-react-app#license)
 
-Folder structure:
+## Getting started
+
+### Install
+
+Install [parcel-react-app](https://www.npmjs.com/package/parcel-react-app) globally:
+
+```bash
+npm i -g parcel-react-app
+```
+
+### Usage
+
+To create a new app, run:
+
+```bash
+parcel-react-app my-app
+```
+This will create a folder `my-app` and install all dependencies. Folder structure:
 
 ```
-parcel-react-app/
+my-app/
+|-- config/
+|   |-- jestSetup.js
 |-- public/
 |   |-- favicon.ico
 |   |-- index.html
@@ -35,8 +54,6 @@ parcel-react-app/
 |       |-- reactjs.png
 |   |-- index.css
 |   |-- index.js
-|-- test/
-|   |-- jestsetup.js
 |-- .babelrc
 |-- .eslintrc.json
 |-- .gitignore
@@ -46,24 +63,6 @@ parcel-react-app/
 |-- package.json
 |-- README.md
 |-- yarn.lock
-```
-
-## Getting started
-
-### Install
-
-Install `parcel-react-app` globally:
-
-```bash
-npm i -g parcel-react-app
-```
-
-### Usage
-
-To create a new app, run:
-
-```bash
-parcel-react-app my-app
 ```
 
 ### Development
@@ -126,8 +125,10 @@ yarn add styled-components
 If you want to lint your **styled-components** with **stylelint** follow the instructions on [stylelint-processor-styled-components](https://github.com/styled-components/stylelint-processor-styled-components). Then add
 this script to your `package.json`:
 
-```bash
-"lint:styled": "stylelint './src/**/*.js'"
+```json
+"scripts": {
+  "lint:styled": "stylelint './src/**/*.js'"
+}
 ```
 
 ## Formatting and Linting
