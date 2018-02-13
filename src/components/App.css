@@ -1,16 +1,19 @@
 .app {
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
+  width: 100%;
+  text-align: center;
   margin: 0;
   padding: 80px 0;
   font-style: italic;
   font-size: 2.5rem;
   text-transform: uppercase;
-  background-color: #62dafb;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .text {
@@ -18,17 +21,18 @@
 }
 
 .text span {
-  color: #62dafb;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .img {
-  margin: 10px;
+  max-width: 350px;
+  margin: 10px 0;
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
   position: relative;
   animation: react 5s infinite;
 }

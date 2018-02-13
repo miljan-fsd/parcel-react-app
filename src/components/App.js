@@ -28,8 +28,6 @@ class App extends Component {
 
         <img src={react} className="img logo" alt="React.js" />
 
-        <br />
-
         <img src={parcel} className="img" alt="Parcel.js" />
       </div>
     )
