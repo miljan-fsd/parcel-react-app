@@ -6,12 +6,12 @@ import react from '../images/reactjs.png'
 import parcel from '../images/parceljs.png'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
+  static defaultProps = {
+    title: 'React App with Parcel Bundler'
+  }
 
-    this.state = {
-      isAwesome: true
-    }
+  state = {
+    isAwesome: true
   }
 
   render() {
@@ -32,10 +32,6 @@ class App extends Component {
       </div>
     )
   }
-}
-
-App.defaultProps = {
-  title: 'React App with Parcel Bundler'
 }
 
 App.propTypes = {

@@ -1,4 +1,4 @@
 {
   "presets": ["env", "react"],
-  "plugins": ["transform-runtime"]
+  "plugins": ["transform-class-properties", "transform-runtime"]
 }
