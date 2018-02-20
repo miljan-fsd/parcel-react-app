@@ -17,7 +17,7 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["react", "jest", "json", "markdown"],
+  "plugins": ["react", "jest", "json", "markdown", "import"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
