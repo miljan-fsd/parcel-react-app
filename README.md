@@ -1,8 +1,8 @@
 # Parcel React App
 
-Create [React](https://github.com/facebook/react) apps using [Parcel](https://github.com/parcel-bundler/parcel) as build tool.
-
 [![David](https://img.shields.io/david/miljan-fsd/parcel-react-app.svg)](https://david-dm.org/miljan-fsd/parcel-react-app) [![David](https://img.shields.io/david/dev/miljan-fsd/parcel-react-app.svg)](https://david-dm.org/miljan-fsd/parcel-react-app?type=dev) [![npm](https://img.shields.io/npm/dt/parcel-react-app.svg?style=flat)](https://www.npmjs.com/package/parcel-react-app)
+
+Create [React](https://github.com/facebook/react) apps using [Parcel](https://github.com/parcel-bundler/parcel) as build tool.
 
 ## Table of Contents
 
