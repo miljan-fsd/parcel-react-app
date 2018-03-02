@@ -41,11 +41,6 @@ This will create a folder `my-app` and install all dependencies. Folder structur
 
 ```
 my-app/
-|-- .github/
-|   |-- CODE_OF_CONDUCT.md
-|   |-- CONTRIBUTING.md
-|   |-- ISSUE_TEMPLATE.md
-|   |-- PULL_REQUEST_TEMPLATE.md
 |-- config/
 |   |-- jestSetup.js
 |-- public/
@@ -66,7 +61,6 @@ my-app/
 |-- .gitignore
 |-- .prettierrc
 |-- .stylelintrc
-|-- LICENSE
 |-- package.json
 |-- README.md
 |-- yarn.lock
@@ -209,4 +203,4 @@ yarn test:coverage
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/miljan-fsd/parcel-react-app/blob/master/LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/miljan-fsd/parcel-react-app/blob/master/LICENSE) file for details.
