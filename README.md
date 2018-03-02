@@ -204,4 +204,4 @@ yarn test:coverage
 
 ## License
 
-[MIT](https://tldrlegal.com/license/mit-license) &copy; 2018 Miljan Djordjevic
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/miljan-fsd/parcel-react-app/blob/master/LICENSE) file for details.
