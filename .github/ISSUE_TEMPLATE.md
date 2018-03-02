@@ -17,7 +17,7 @@
 | Operating system                  |         |
 | Browser and version (if relevant) |         |
 
-### :computer: Steps to Reproduce 
+### :computer: Steps to Reproduce
 (Write your steps here.)
 
 ### :bulb: Possible Solution

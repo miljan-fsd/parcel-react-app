@@ -1,6 +1,6 @@
 # Parcel React App
 
-[![David](https://img.shields.io/david/miljan-fsd/parcel-react-app.svg)](https://david-dm.org/miljan-fsd/parcel-react-app) [![David](https://img.shields.io/david/dev/miljan-fsd/parcel-react-app.svg)](https://david-dm.org/miljan-fsd/parcel-react-app?type=dev) [![npm](https://img.shields.io/npm/dt/parcel-react-app.svg?style=flat)](https://www.npmjs.com/package/parcel-react-app)
+[![dependencies](https://img.shields.io/david/miljan-fsd/parcel-react-app.svg)](https://david-dm.org/miljan-fsd/parcel-react-app) [![devDependencies](https://img.shields.io/david/dev/miljan-fsd/parcel-react-app.svg)](https://david-dm.org/miljan-fsd/parcel-react-app?type=dev) [![npmDownloads](https://img.shields.io/npm/dt/parcel-react-app.svg?style=flat)](https://www.npmjs.com/package/parcel-react-app)
 
 Create [React](https://github.com/facebook/react) apps using [Parcel](https://github.com/parcel-bundler/parcel) as build tool.
 
@@ -41,6 +41,11 @@ This will create a folder `my-app` and install all dependencies. Folder structur
 
 ```
 my-app/
+|-- .github/
+|   |-- CODE_OF_CONDUCT.md
+|   |-- CONTRIBUTING.md
+|   |-- ISSUE_TEMPLATE.md
+|   |-- PULL_REQUEST_TEMPLATE.md
 |-- config/
 |   |-- jestSetup.js
 |-- public/
@@ -75,7 +80,7 @@ Start the development server run:
 yarn start
 ```
 
-Now, open [http://localhost:3000](http://localhost:3000) in your browser.
+This will automatically open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Production
 
