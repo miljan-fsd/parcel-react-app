@@ -52,11 +52,11 @@ my-app/
 |   |-- images/
 |       |-- parceljs.png
 |       |-- reactjs.png
-|   |-- index.css
 |   |-- index.js
 |-- .babelrc
 |-- .eslintrc.json
 |-- .gitignore
+|-- .postcssrc
 |-- .prettierrc
 |-- .stylelintrc
 |-- package-lock.json

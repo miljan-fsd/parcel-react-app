@@ -1,0 +1,58 @@
+$primary-color: #62dafb;
+$secondary-color: #fff;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 80px 0;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+.text {
+  font-size: 1.2rem;
+
+  span {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.img {
+  max-width: 350px;
+  margin: 10px 0;
+}
+
+.logo {
+  width: 100px;
+  position: relative;
+  animation: react 5s infinite;
+
+  @keyframes react {
+    20%,
+    100% {
+      left: 0;
+      bottom: 0;
+      opacity: 1;
+    }
+
+    0%,
+    10% {
+      left: 0;
+      bottom: -150px;
+      opacity: 0;
+    }
+  }
+}
+

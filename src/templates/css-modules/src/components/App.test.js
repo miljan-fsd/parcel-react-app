@@ -3,10 +3,10 @@ import React from 'react'
 import App from './App.js'
 
 describe('<App />', () => {
-  it('has 2 classes .img', () => {
+  it('has 4 elements', () => {
     const wrapper = shallow(<App />)
 
-    expect(wrapper.find('.img')).toHaveLength(2)
+    expect(wrapper.children()).toHaveLength(4)
   })
 
   it('has prop title', () => {

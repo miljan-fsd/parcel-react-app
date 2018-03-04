@@ -46,13 +46,13 @@ my-app/
 |   |-- index.html
 |-- src/
 |   |-- components/
-|   |   |-- App.css
+|   |   |-- App.scss
 |   |   |-- App.js
 |   |   |-- App.test.js
 |   |-- images/
 |       |-- parceljs.png
 |       |-- reactjs.png
-|   |-- index.css
+|   |-- index.scss
 |   |-- index.js
 |-- .babelrc
 |-- .eslintrc.json

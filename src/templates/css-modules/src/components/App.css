@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #62dafb;
+  --secondary-color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 80px 0;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.text span {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.img {
+  max-width: 350px;
+  margin: 10px 0;
+}
+
+.logo {
+  width: 100px;
+  position: relative;
+  animation: react 5s infinite;
+}
+
+@keyframes react {
+  20%,
+  100% {
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+
+  0%,
+  10% {
+    left: 0;
+    bottom: -150px;
+    opacity: 0;
+  }
+}

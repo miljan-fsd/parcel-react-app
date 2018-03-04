@@ -1,7 +1,3 @@
 node_modules/
-.cache/
-dist/
-build/
-coverage/
 .DS_Store
 *.log
