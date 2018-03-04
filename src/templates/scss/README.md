@@ -6,16 +6,16 @@ Create [React](https://github.com/facebook/react) apps using [Parcel](https://gi
 
 ## Table of Contents
 
-* [Getting Started](https://github.com/miljan-fsd/parcel-react-app#getting-started)
-  * [Install](https://github.com/miljan-fsd/parcel-react-app#install)
-  * [Usage](https://github.com/miljan-fsd/parcel-react-app#usage)
-  * [Development](https://github.com/miljan-fsd/parcel-react-app#development)
-  * [Production](https://github.com/miljan-fsd/parcel-react-app#production)
-* [Formatting and Linting](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting)
-  * [Formatting and Linting JS](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-js)
-  * [Formatting and Linting Styles](https://github.com/miljan-fsd/parcel-react-app#formatting-and-linting-styles)
-* [Testing](https://github.com/miljan-fsd/parcel-react-app#testing)
-* [License](https://github.com/miljan-fsd/parcel-react-app#license)
+* [Getting Started](#getting-started)
+  * [Install](#install)
+  * [Usage](#usage)
+  * [Development](#development)
+  * [Production](#production)
+* [Formatting and Linting](#formatting-and-linting)
+  * [Formatting and Linting JS](#formatting-and-linting-js)
+  * [Formatting and Linting Styles](#formatting-and-linting-styles)
+* [Testing](#testing)
+* [License](#license)
 
 ## Getting started
 
