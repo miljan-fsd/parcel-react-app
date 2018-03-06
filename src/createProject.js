@@ -5,16 +5,6 @@ const process = require('process')
 const fs = require('fs')
 const path = require('path')
 
-const contentOfGitignore = `
-node_modules/
-.cache/
-dist/
-build/
-coverage/
-.DS_Store
-*.log
-`
-
 module.exports = function createProject(projectName, author, styleType) {
   const projectPath = String(process.cwd())
   const source = path.join(__dirname, `templates/${styleType}`)
@@ -49,17 +39,17 @@ module.exports = function createProject(projectName, author, styleType) {
       }
     )
 
-    fs.writeFile(
-      path.resolve(projectPath, projectName, '.gitignore'),
-      contentOfGitignore,
-      err => {
-        if (err) return console.log(err)
-      }
-    )
+    fs
+      .createReadStream(path.resolve(__dirname, 'templates/.npmignore'))
+      .pipe(
+        fs.createWriteStream(
+          path.resolve(projectPath, projectName, '.gitignore')
+        )
+      )
 
     console.log('\n Installing dependencies with npm, please wait... \n')
 
-    let installPackages = exec(`cd ${projectName} && npm install`, err => {
+    const installPackages = exec(`cd ${projectName} && npm install`, err => {
       if (err) return console.log(err)
     })
 
