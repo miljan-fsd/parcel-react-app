@@ -3,6 +3,7 @@
 'use strict'
 
 const inquirer = require('inquirer')
+const chalk = require('chalk')
 
 const process = require('process')
 const fs = require('fs')
@@ -15,11 +16,10 @@ const projectQuestions = [
     message: 'Enter project name?',
     type: 'input',
     name: 'projectName',
-    validate: function (input) {
+    validate: function(input) {
       if (input.match(/^[\W\_]/) || input === '') {
         return '"Project name" could not be empty or start with a non-word character.'
-      }
-      else {
+      } else {
         return true
       }
     }
@@ -28,11 +28,10 @@ const projectQuestions = [
     message: 'Enter your name?',
     type: 'input',
     name: 'author',
-    validate: function (input) {
+    validate: function(input) {
       if (input.match(/[^\w\s\']/) || input === '') {
         return '"Your name" cannot contain non-word characters.'
-      }
-      else {
+      } else {
         return true
       }
     }
@@ -53,15 +52,20 @@ if (arg === '--version' || arg === '-V') {
     return console.log(res.version)
   })
 } else if (arg === '--help' || arg === '-h') {
-  console.log(' Usage: parcel-react-app [options]\n')
-  console.log(' -V, --version \n\toutput the version number')
-  console.log(' new \n\tcreate new project')
-  console.log(' -h, --help \n\toutput usage information')
+  console.log(`
+  Usage: parcel-react-app [options]\n
+    -V, --version \n\toutput the version number
+    new \n\tcreate a new project
+    -h, --help \n\toutput usage information
+  `)
 } else if (arg === 'new') {
-  inquirer.prompt(projectQuestions)
-    .then((answers) => createProject(answers.projectName, answers.author, answers.style))
+  inquirer
+    .prompt(projectQuestions)
+    .then(answers =>
+      createProject(answers.projectName, answers.author, answers.style)
+    )
 } else {
-  console.log('Not valid input. Try -h or --help for more information.')
+  console.log(
+    `${chalk.red('Not valid input.')} Try -h or --help for more information.`
+  )
 }
-
-

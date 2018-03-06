@@ -1,11 +1,13 @@
 {
   "name": "parcel-react-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "React App",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development parcel ./public/index.html -p 3000 --open",
-    "build": "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url ./",
+    "dev":
+      "cross-env NODE_ENV=development parcel ./public/index.html -p 3000 --open",
+    "build":
+      "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url ./",
     "format:js": "prettier --write './src/**/*.{js,jsx,json,md}'",
     "format:style": "prettier-stylelint --write './src/**/*.js'",
     "format": "npm run format:js && npm run format:style",
@@ -16,10 +18,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
-  "keywords": [
-    "Parcel",
-    "React"
-  ],
+  "keywords": ["Parcel", "React"],
   "author": "",
   "dependencies": {
     "babel-runtime": "^6.26.0",
@@ -60,17 +59,12 @@
     "stylelint-scss": "^2.4.0"
   },
   "jest": {
-    "setupFiles": [
-      "./config/jestSetup.js"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
+    "setupFiles": ["./config/jestSetup.js"],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "moduleNameMapper": {
-      "^.+\\.(css|scss|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy"
+      "^.+\\.(css|scss|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "identity-obj-proxy"
     }
   }
 }

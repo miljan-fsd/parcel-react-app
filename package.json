@@ -1,16 +1,12 @@
 {
   "name": "parcel-react-app",
-  "version": "2.0.2",
+  "version": "2.0.3-beta.0",
   "description": "Create React apps using Parcel as build tool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "index.js",
-    "src",
-    "README.md"
-  ],
+  "files": ["index.js", "src", "README.md"],
   "bin": {
     "parcel-react-app": "index.js"
   },
@@ -18,10 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/miljan-fsd/parcel-react-app.git"
   },
-  "keywords": [
-    "Parcel",
-    "React"
-  ],
+  "keywords": ["Parcel", "React"],
   "author": "Miljan Djordjevic <miljan.fsd@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -29,8 +22,12 @@
   },
   "homepage": "https://github.com/miljan-fsd/parcel-react-app#readme",
   "dependencies": {
-    "colors": "^1.1.2",
+    "chalk": "^2.3.2",
     "inquirer": "^5.1.0",
     "ncp": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "prettier": "^1.11.1"
   }
 }
