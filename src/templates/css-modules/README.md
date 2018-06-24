@@ -7,7 +7,7 @@ Create [React](https://github.com/facebook/react) apps using [Parcel](https://gi
 ## Table of Contents
 
 * [Getting Started](#getting-started)
-  * [Install](#install)
+  * [Installation](#installation)
   * [Usage](#usage)
   * [Development](#development)
   * [Production](#production)
@@ -19,7 +19,7 @@ Create [React](https://github.com/facebook/react) apps using [Parcel](https://gi
 
 ## Getting started
 
-### Install
+### Installation
 
 Install [parcel-react-app](https://www.npmjs.com/package/parcel-react-app) globally:
 
@@ -37,7 +37,7 @@ parcel-react-app new
 
 First, you need to enter the name of the project (e.g. `my-app`), author of the project and then select the style type (`css`, [scss](https://github.com/sass/node-sass), [css-modules](https://github.com/css-modules/css-modules) or [styled-components](https://github.com/styled-components/styled-components)). This will create a folder `my-app` and install all dependencies. Folder structure (for css):
 
-```
+```markdown
 my-app/
 |-- config/
 |   |-- jestSetup.js
