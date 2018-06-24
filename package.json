@@ -1,6 +1,6 @@
 {
   "name": "parcel-react-app",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Create React apps using Parcel as build tool",
   "main": "index.js",
   "scripts": {
